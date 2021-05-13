@@ -1,8 +1,16 @@
+:root {
+  --key1: #754BB4;
+  --key2: #B44B55;
+  --key3: #8AB44B;
+  --key4: #4BB4AA; 
+}
+
 * {
     text-align: center;
     padding: 0;
     margin: 0;
     font-family: 'Source Code Pro', monospace;
+    
 }
 
 h1 {
