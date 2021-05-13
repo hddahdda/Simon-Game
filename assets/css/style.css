@@ -13,14 +13,20 @@ body {
     font-family: 'Source Code Pro', monospace;
     color: var(--black);
     background-color: var(--background);
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Codystar', cursive;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: 4rem;
 
+}
+
+.container {
+    padding: 1rem;
 }
 
 #key1,
@@ -33,6 +39,9 @@ h1 {
     height: 10em;
     padding: 1.5rem;
     margin: 1rem;
+    border: double;
+    border-width: 5px;
+    
 }
 
 button {
@@ -45,6 +54,36 @@ button .btndiv{
     font-weight: 800;
     font-style: var(--white);
     border-radius: 20%;
-    font-size: xx-large;
 }
 
+#key1 {
+    border-color: var(--key1);
+}
+
+#key1:hover {
+    background-color: var(--key1);
+}
+
+#key2 {
+    border-color: var(--key2);
+}
+
+#key2:hover {
+    background-color: var(--key2);
+}
+
+#key3 {
+    border-color: var(--key3);
+}
+
+#key3:hover {
+    background-color: var(--key3);
+}
+
+#key4 {
+    border-color: var(--key4);
+}
+
+#key4:hover {
+    background-color: var(--key4);
+}
