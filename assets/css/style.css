@@ -3,17 +3,22 @@
   --key2: #B44B55;
   --key3: #8AB44B;
   --key4: #4BB4AA; 
+  --background: #F0F8F5; 
+  --white: #eef2f3; 
+  --black: #212c2f; 
 }
 
-* {
+body {
     text-align: center;
-    padding: 0;
-    margin: 0;
     font-family: 'Source Code Pro', monospace;
+    color: var(--black);
+    background-color: var(--background);
     
 }
 
 h1 {
     font-family: 'Codystar', cursive;
+
 }
+
 
