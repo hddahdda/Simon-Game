@@ -13,11 +13,13 @@ body {
     font-family: 'Source Code Pro', monospace;
     color: var(--black);
     background-color: var(--background);
-    
 }
 
 h1 {
     font-family: 'Codystar', cursive;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 4rem;
 
 }
 
@@ -27,8 +29,22 @@ h1 {
 #key4 {
   
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 10em;
+    height: 10em;
     padding: 1.5rem;
     margin: 1rem;
 }
+
+button {
+    width: 15rem;
+    height: 4rem;
+    font-size: xx-large;
+}
+
+button .btndiv{
+    font-weight: 800;
+    font-style: var(--white);
+    border-radius: 20%;
+    font-size: xx-large;
+}
+
