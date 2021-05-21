@@ -15,3 +15,11 @@ $("#button").click(function() {
     }
     
 });
+
+// function for the game to create a random sequence 
+
+function newSequence() {
+  var randomNumber = Math.floor(Math.random() * 4);
+  var randomKey = keys[randomNumber];
+  cpuPattern.push(randomKey);
+}
