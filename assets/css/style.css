@@ -46,6 +46,13 @@ h1 {
     align-items: center;
 }
 
+#key1 i,
+#key2 i,
+#key3 i,
+#key4 i {
+   font-size: 4rem;
+}
+
 button {
     width: 15rem;
     height: 4rem;
@@ -62,20 +69,12 @@ button .btndiv{
     background-color: var(--key1);
 }
 
-#key1 i {
-    font-size: 4rem;
-}
-
 #key1:hover {
     background-color: var(--key1);
 }
 
 #key2 {
     background-color: var(--key2);
-}
-
-#key2 i {
-    font-size: 4rem;
 }
 
 #key2:hover {
@@ -86,20 +85,12 @@ button .btndiv{
     background-color: var(--key3);
 }
 
-#key3 i {
-    font-size: 4rem;
-}
-
 #key3:hover {
     background-color: var(--key3);
 }
 
 #key4 {
     background-color: var(--key4);
-}
-
-#key4 i {
-    font-size: 4rem;
 }
 
 #key4:hover {
