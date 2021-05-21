@@ -60,7 +60,7 @@ button .btndiv{
 }
 
 #key1 {
-    border-color: var(--key1);
+    background-color: var(--key1);
 }
 
 #key1:hover {
@@ -68,7 +68,7 @@ button .btndiv{
 }
 
 #key2 {
-    border-color: var(--key2);
+    background-color: var(--key2);
 }
 
 #key2:hover {
@@ -76,7 +76,7 @@ button .btndiv{
 }
 
 #key3 {
-    border-color: var(--key3);
+    background-color: var(--key3);
 }
 
 #key3:hover {
@@ -84,7 +84,7 @@ button .btndiv{
 }
 
 #key4 {
-    border-color: var(--key4);
+    background-color: var(--key4);
 }
 
 #key4:hover {
