@@ -41,7 +41,10 @@ h1 {
     margin: 1rem;
     border: double;
     border-width: 5px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 button {
