@@ -13,7 +13,6 @@ $("#button").click(function() {
         $("h3").text("Game Started!")
         gameOn = true;
         newSequence();
-        console.log(cpuPattern);
     }
     
 });
@@ -22,6 +21,11 @@ $("#button").click(function() {
 $(".btn").on("click", function(event){
  var playerKey = event.target.id;
 
+playerPattern.push(playerKey);
+console.log(playerPattern);
+
+sound(playerKey);
+keyDown(playerKey);
 });
 // function for the game to create a random sequence 
 
