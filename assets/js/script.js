@@ -38,4 +38,18 @@ function sound(keyStyle) {
   var audio = new Audio("/assets/sounds/" + keyStyle + ".m4a");
   audio.play();
 }
-sound();
+
+// when the key is triggered (either by computer or human), this function creates inline styling using jQuery.
+function keyDown(keyStyle) {
+    $("#" + keyStyle).css({
+        'background-color': 'blue',
+        'box-shadow': 'green'
+    });
+// By using setTimeout the styling only applies for 1000ms, 
+    setTimeout(function(){
+        $("#" + keyStyle).css({
+        'background-color': '', // removed styling by using a empty string
+        'box-shadow': ''
+    });
+    }, 1000); // for how long the styling will be applied
+};
