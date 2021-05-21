@@ -60,3 +60,19 @@ function keyDown(keyStyle) {
     });
     }, 700); // for how long the styling will be applied
 };
+
+function checkGame(){
+    if(!playerPattern === cpuPattern) {
+        $("h3").text("good job!");
+        $("h1").css("color", "green");
+        newSequence();
+    } else {
+        console.log("wrong! your final score is:" + level);
+        let gameOn = false;
+        let level = 0;
+        $("#button").text("Try again?"); {
+            console.log("restart game");
+        } 
+    }
+
+}
