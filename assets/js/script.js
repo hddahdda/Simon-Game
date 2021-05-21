@@ -13,6 +13,7 @@ $("#button").click(function() {
         $("h3").text("Game Started!")
         gameOn = true;
         newSequence();
+        console.log(cpuPattern);
     }
     
 });
@@ -23,4 +24,5 @@ function newSequence() {
   var randomNumber = Math.floor(Math.random() * 4);
   var randomKey = keys[randomNumber];
   cpuPattern.push(randomKey);
-}
+  
+};
