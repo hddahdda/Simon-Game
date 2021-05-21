@@ -53,5 +53,5 @@ function keyDown(keyStyle) {
         'background-color': '', // removed styling by using a empty string
         'box-shadow': ''
     });
-    }, 1000); // for how long the styling will be applied
+    }, 700); // for how long the styling will be applied
 };
