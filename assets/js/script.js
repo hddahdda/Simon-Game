@@ -12,6 +12,7 @@ $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!")
         gameOn = true;
+        newSequence();
     }
     
 });
