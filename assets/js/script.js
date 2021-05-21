@@ -19,13 +19,11 @@ $("#button").click(function() {
 
 // Get id from clicked buttons here
 $(".btn").on("click", function(event){
- var playerKey = event.target.id;
+ var playerKey = event.target.id; // collecting the id from the key pressed and storing it
+playerPattern.push(playerKey); // pushing the value from the playerKey in to the playePattern variable
 
-playerPattern.push(playerKey);
-console.log(playerPattern);
-
-sound(playerKey);
-keyDown(playerKey);
+sound(playerKey); // calling the sound function when the key is clicked
+keyDown(playerKey); // changing button styling when the key is clicked 
 });
 // function for the game to create a random sequence 
 
