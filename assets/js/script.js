@@ -18,6 +18,12 @@ $("#button").click(function() {
     
 });
 
+// Get id from clicked buttons here
+$(".btn").on("click", function(event){
+ var playerKey = event.target.id;
+});
+
+
 // function for the game to create a random sequence 
 
 function newSequence() {
@@ -26,3 +32,6 @@ function newSequence() {
   cpuPattern.push(randomKey);
   
 };
+
+
+
