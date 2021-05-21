@@ -28,16 +28,21 @@ keyDown(playerKey); // changing button styling when the key is clicked
 // function for the game to create a random sequence 
 
 function newSequence() {
+ playerPattern = [];
+
+ level++;
   var randomNumber = Math.floor(Math.random() * 4);
   var randomKey = keys[randomNumber];
   cpuPattern.push(randomKey);
-  
-};
+
+ keyDown()
+ sound()
+}
 
 // sound and key styling functions
 
-function sound(keyStyle) {
-  var audio = new Audio("/assets/sounds/" + keyStyle + ".m4a");
+function sound(keyAudio) {
+  var audio = new Audio("/assets/sounds/" + keyAudio + ".m4a");
   audio.play();
 }
 
