@@ -77,7 +77,7 @@ function keyDown(keyStyle) {
 function checkGame(checker){
     if(playerPattern[checker] === cpuPattern[checker]){
         $("h3").text("Level " + level);
-        $("h1").css("color", "green");
+        $("h1").addClass("good");
     if (cpuPattern.length === playerPattern.length) {
         setTimeout(function(){
             newSequence();
@@ -92,7 +92,7 @@ function checkGame(checker){
     };
 
 };
-// Refreshes the site 
+// Refreshes the Game
 function newGame(){
     $("button").click(function(){
         location.reload();
