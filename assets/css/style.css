@@ -96,3 +96,8 @@ button .btndiv{
 #key4:hover {
     background-color: var(--key4);
 }
+
+.invisible {
+  color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
+}

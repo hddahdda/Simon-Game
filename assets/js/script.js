@@ -8,11 +8,12 @@ let level = 0;
 
 // if start button is clicked, start the game
 
-$("#button").click(function() {
+let buttonClick = $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!");
+        $(".btndiv").addClass("invisible")
  
-      gameOn = true;
+      gameOn = true; 
       newSequence();
       checkGame();
     }
@@ -83,6 +84,7 @@ function checkGame(checker){
     } else {
         $("h3").text("Game Over, You're final level is: " + level)
         $("#button").text("Restart")
+        $(".btndiv").removeClass("invisible")
         newGame();
     };
 
