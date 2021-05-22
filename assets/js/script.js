@@ -8,8 +8,12 @@ let level = 0;
 
 // if start button is clicked, start the game
 
-let buttonClick = $("#button").click(function() {
-    if(!gameOn) {
+$("#button").click(function() {
+   buttonPushed();
+});
+
+function buttonPushed(){
+ if(!gameOn) {
         $("h3").text("Game Started!");
         $("h2").text("");
         $(".btndiv").addClass("invisible")
@@ -18,8 +22,7 @@ let buttonClick = $("#button").click(function() {
       newSequence();
       checkGame();
     }
-
-});
+}
 
 // Get id from clicked buttons here
 $(".btn").on("click", function(event){
@@ -87,16 +90,18 @@ function checkGame(checker){
         $("#button").text("Restart")
         $(".btndiv").removeClass("invisible")
         newGame();
+        
     };
 
 };
+
 function newGame(){
-    
     let gameOn = false;
     let level = 0;
     let cpuPattern = [];
     let playerPattern = [];
+
+    $("button").click(function(){
+        location.reload();
+    })
 };
-
-
-
