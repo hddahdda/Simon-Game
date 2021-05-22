@@ -96,11 +96,6 @@ function checkGame(checker){
 };
 
 function newGame(){
-    let gameOn = false;
-    let level = 0;
-    let cpuPattern = [];
-    let playerPattern = [];
-
     $("button").click(function(){
         location.reload();
     })
