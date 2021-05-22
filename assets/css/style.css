@@ -1,3 +1,4 @@
+/************************* Colors*/
 :root {
   --key1: #754BB4;
   --key2: #B44B55;
@@ -7,7 +8,7 @@
   --white: #eef2f3; 
   --black: #212c2f; 
 }
-
+/************************* Body*/
 body {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
@@ -17,6 +18,8 @@ body {
     margin: 0;
 }
 
+/************************* Header*/
+
 h1 {
     font-family: 'Codystar', cursive;
     padding: 2rem;
@@ -24,6 +27,8 @@ h1 {
     font-size: 4rem;
 
 }
+
+/************************* General rules in Game Area*/
 
 .container {
     padding: 1rem;
@@ -59,43 +64,42 @@ button {
     font-size: xx-large;
 }
 
+/************************* Specifik rules for button + keys*/
+
 button .btndiv{
     font-weight: 800;
     font-style: var(--white);
     border-radius: 20%;
 }
-
 #key1 {
     background-color: var(--key1);
 }
-
-#key1:hover {
-    background-color: var(--key1);
-}
-
 #key2 {
     background-color: var(--key2);
 }
-
-#key2:hover {
-    background-color: var(--key2);
-}
-
 #key3 {
     background-color: var(--key3);
 }
-
-#key3:hover {
-    background-color: var(--key3);
-}
-
 #key4 {
     background-color: var(--key4);
 }
 
+/******************** Hover ***/
+
+#key1:hover {
+    background-color: var(--key1);
+}
+#key2:hover {
+    background-color: var(--key2);
+}
+#key3:hover {
+    background-color: var(--key3);
+}
 #key4:hover {
     background-color: var(--key4);
 }
+
+/**********************Rules that are applied through JavaScript***/
 
 .invisible {
   color: rgba(0,0,0,0);
