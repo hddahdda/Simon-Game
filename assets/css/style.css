@@ -62,6 +62,7 @@ button {
     width: 15rem;
     height: 4rem;
     font-size: xx-large;
+    border-radius: 20%;
 }
 
 /************************* Specifik rules for button + keys*/
@@ -109,6 +110,9 @@ button .btndiv{
 .good {
 color: var(--key4);
 }
+
+/**********************Media Queries***/
+
 
 @media (max-width: 480px) {
     h1 {
