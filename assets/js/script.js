@@ -6,20 +6,18 @@ let cpuPattern = [];
 let playerPattern = [];
 let level = 0;
 
-// if start button is clicked, start the game
-
-$("#button").click(function() {
+// if start button is clicked, call the function bottomPushed
+$("#button").click(function() { 
    buttonPushed();
 });
 
-function buttonPushed(){
- if(!gameOn) {
-        $("h3").text("Game Started!");
-        $("h2").text("");
-        $(".btndiv").addClass("invisible")
+function buttonPushed(){ 
+ if(!gameOn) { 
+        $("h2").text(""); // removes rules from game as the game is played
+        $(".btndiv").addClass("invisible") // removes the start button 
  
-      gameOn = true; 
-      newSequence();
+      gameOn = true; // Game is On
+      newSequence(); // Calling functions 
       checkGame();
     }
 }
@@ -32,7 +30,7 @@ playerPattern.push(playerKey); // pushing the value from the playerKey in to the
 sound(playerKey); // calling the sound function when the key is clicked
 keyDown(playerKey); // changing button styling when the key is clicked
 
-checkGame(playerPattern.length- 1);
+checkGame(playerPattern.length- 1); 
 });
 
 // function for the game to create a random sequence 
@@ -40,7 +38,7 @@ function newSequence() {
  playerPattern = [];
 
 level++;
-  var randomNumber = Math.floor(Math.random() * 4);
+  var randomNumber = Math.floor(Math.random() * 4); // The game part
   var randomKey = keys[randomNumber];
   cpuPattern.push(randomKey);
 
@@ -75,7 +73,7 @@ function keyDown(keyStyle) {
     }, 500); // for how long the styling will be applied
 };
 
-// preliminary checkGame function
+// Checking game sequence against user sequence 
 function checkGame(checker){
     if(playerPattern[checker] === cpuPattern[checker]){
         $("h3").text("Level " + level);
@@ -94,7 +92,7 @@ function checkGame(checker){
     };
 
 };
-
+// Refreshes the site 
 function newGame(){
     $("button").click(function(){
         location.reload();
