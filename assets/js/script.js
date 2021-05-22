@@ -47,7 +47,11 @@ level++;
 
 function sound(keyAudio) {
   var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
-  audio.play();
+  setTimeout(function(){
+      audio.play()
+  },100) 
+
+  // temporarily shortened files using timeout. 
 }
 
 // when the key is triggered (either by computer or human), this function creates inline styling using jQuery.
@@ -70,11 +74,10 @@ function checkGame(){
     if(playerPattern.length === cpuPattern.length) {
         $("h3").text("good job!");
         $("h1").css("color", "green");
-        
+    
         setTimeout(function(){
             newSequence();
-        },1000)
-        
+        },1000) 
     } else {
         console.log("wrong! your final score is:" + level);
         let gameOn = false;
