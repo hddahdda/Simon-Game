@@ -11,8 +11,7 @@ let level = 0;
 $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!");
-        $("h2").text("");
-    
+ 
       gameOn = true;
       newSequence();
       checkGame();
@@ -51,7 +50,7 @@ function sound(keyAudio) {
   var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
   setTimeout(function(){
       audio.play()
-  },50) 
+  },100) 
 
   // temporarily shortened files using timeout. 
 }
