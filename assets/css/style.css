@@ -109,3 +109,7 @@ button .btndiv{
 .good {
     font-color: var(--key4);
 }
+
+.pressedstyle {
+    background-color: rgba(232, 230, 211, 0.73);
+}
