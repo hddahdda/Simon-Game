@@ -126,4 +126,10 @@ color: var(--key4);
     margin: 0.5rem;
     border-width: 2px;
 }
+
+button {
+    width: 6rem;
+    height: 3rem;
+    font-size: 0.8rem;
+}
 }
