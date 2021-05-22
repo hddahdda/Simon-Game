@@ -10,7 +10,9 @@ let level = 0;
 
 $("#button").click(function() {
     if(!gameOn) {
-        $("h3").text("Game Started!")
+        $("h3").text("Game Started!");
+        $("h2").text("");
+       
 
       gameOn = true;
       newSequence();
@@ -29,8 +31,8 @@ keyDown(playerKey); // changing button styling when the key is clicked
 
 checkGame(playerPattern - 1);
 });
-// function for the game to create a random sequence 
 
+// function for the game to create a random sequence 
 function newSequence() {
  playerPattern = [];
 
@@ -66,7 +68,7 @@ function keyDown(keyStyle) {
         'background-color': '', // removed styling by using a empty string
         'box-shadow': ''
     });
-    }, 700); // for how long the styling will be applied
+    }, 500); // for how long the styling will be applied
 };
 
 // preliminary checkGame function
