@@ -60,7 +60,7 @@ function sound(keyAudio) {
 
 // when the key is triggered (either by computer or human), this function creates inline styling using jQuery.
 function keyDown(keyStyle) {
-    $("#" + keyStyle).css('background-color', "rgba(232, 230, 211, 0.73)"); //keeping this inline styling as it it a styling that goes upon another class
+    $("#" + keyStyle).css('background-color', "rgba(232, 230, 211, 0.73)"); //keeping this inline styling as it it a styling that goes upo another class
 
 // By using setTimeout the styling only applies for 1000ms, 
     setTimeout(function(){
