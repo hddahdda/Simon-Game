@@ -82,7 +82,8 @@ function checkGame(checker){
         },1000);
      }
     } else {
-        $("h1").text("GAME OVER!!")
+        $("h3").text("Game Over, You're final level is: " + level)
+        $("#button").text("Restart")
         newGame();
     };
 
