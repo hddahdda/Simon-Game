@@ -11,6 +11,7 @@ let level = 0;
 let buttonClick = $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!");
+        $("h2").text("");
         $(".btndiv").addClass("invisible")
  
       gameOn = true; 
