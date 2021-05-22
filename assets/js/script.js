@@ -51,7 +51,7 @@ function sound(keyAudio) {
   var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
   setTimeout(function(){
       audio.play()
-  },100) 
+  },50) 
 
   // temporarily shortened files using timeout. 
 }
@@ -72,18 +72,18 @@ function keyDown(keyStyle) {
 };
 
 // preliminary checkGame function
-function checkGame(){
-    if(playerPattern.length === cpuPattern.length){
+function checkGame(checker){
+    if(playerPattern[checker] === cpuPattern[checker]){
         $("h3").text("Good job!");
         $("h1").css("color", "green");
-    
+    if (cpuPattern.length === playerPattern.length) {
         setTimeout(function(){
             newSequence();
             $("h3").text("");
         },1000);
-     
+     }
     } else {
-         $("h1").css("color", "red");
+        $("h1").text("GAME OVER!!")
         newGame();
     };
 
@@ -94,6 +94,6 @@ function newGame(){
     let cpuPattern = [];
     let playerPattern = [];
 };
-// note, script isn't rendering in github. 
-// note, script isn't rendering in github. 
+
+
 
