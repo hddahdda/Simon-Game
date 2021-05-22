@@ -1,20 +1,22 @@
 // variables
 
-const keys = ["key1", "key2", "key3", "key4"]
+const keys = ["key1", "key2", "key3", "key4"];
+let gameOn = false;
 let cpuPattern = [];
 let playerPattern = [];
 let level = 0;
-let gameOn = false;
 
 // if start button is clicked, start the game
 
 $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!")
-        gameOn = true;
-        newSequence();
+
+      gameOn = true;
+      newSequence();
+      checkGame();
     }
-    
+
 });
 
 // Get id from clicked buttons here
@@ -23,26 +25,28 @@ $(".btn").on("click", function(event){
 playerPattern.push(playerKey); // pushing the value from the playerKey in to the playePattern variable
 
 sound(playerKey); // calling the sound function when the key is clicked
-keyDown(playerKey); // changing button styling when the key is clicked 
+keyDown(playerKey); // changing button styling when the key is clicked
+
+checkGame(playerPattern - 1);
 });
 // function for the game to create a random sequence 
 
 function newSequence() {
  playerPattern = [];
 
- level++;
+level++;
   var randomNumber = Math.floor(Math.random() * 4);
   var randomKey = keys[randomNumber];
   cpuPattern.push(randomKey);
 
- keyDown()
- sound()
+ keyDown(randomKey);
+ sound(randomKey);
 }
 
 // sound and key styling functions
 
 function sound(keyAudio) {
-  var audio = new Audio("/assets/sounds/" + keyAudio + ".m4a");
+  var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
   audio.play();
 }
 
@@ -63,7 +67,7 @@ function keyDown(keyStyle) {
 
 // preliminary checkGame function
 function checkGame(){
-    if(!playerPattern === cpuPattern) {
+    if(playerPattern.length === cpuPattern.length) {
         $("h3").text("good job!");
         $("h1").css("color", "green");
         newSequence();
@@ -76,7 +80,7 @@ function checkGame(){
         } 
         let level = 0;
         let cpuPattern = [];
-        let playePattern = [];
+        let playerPattern = [];
 
         newSequence();
         checkGame();
