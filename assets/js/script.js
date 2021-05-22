@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* globals $:false */
+
 // variables
 
 const keys = ["key1", "key2", "key3", "key4"];
@@ -14,7 +17,7 @@ $("#button").click(function() {
 function buttonPushed(){ 
  if(!gameOn) { 
         $("h2").text(""); // removes rules from game as the game is played
-        $(".btndiv").addClass("invisible") // removes the start button 
+        $(".btndiv").addClass("invisible"); // removes the start button 
  
       gameOn = true; // Game is On
       newSequence(); // Calling functions 
@@ -52,8 +55,8 @@ level++;
 function sound(keyAudio) {
   var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
   setTimeout(function(){
-      audio.play()
-  },100) 
+      audio.play();
+  },100);
 
   // temporarily shortened files using timeout. 
 }
@@ -66,7 +69,7 @@ function keyDown(keyStyle) {
     setTimeout(function(){
         $("#" + keyStyle).css('background-color', '');
     }, 500); // for how long the styling will be applied
-};
+}
 
 // Checking game sequence against user sequence 
 function checkGame(checker){
@@ -79,17 +82,17 @@ function checkGame(checker){
         },1000);
      }
     } else {
-        $("h3").text("Game Over, Final level: " + level)
-        $("#button").text("Restart")
-        $(".btndiv").removeClass("invisible")
+        $("h3").text("Game Over, Final level: " + level);
+        $("#button").text("Restart");
+        $(".btndiv").removeClass("invisible");
         newGame();
         
-    };
+    }
 
-};
+}
 // Refreshes the Game
 function newGame(){
     $("button").click(function(){
         location.reload();
-    })
-};
+    });
+}
