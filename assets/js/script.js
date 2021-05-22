@@ -74,12 +74,11 @@ function keyDown(keyStyle) {
 // preliminary checkGame function
 function checkGame(checker){
     if(playerPattern[checker] === cpuPattern[checker]){
-        $("h3").text("Good job!");
+        $("h3").text("Level " + level);
         $("h1").css("color", "green");
     if (cpuPattern.length === playerPattern.length) {
         setTimeout(function(){
             newSequence();
-            $("h3").text("");
         },1000);
      }
     } else {
@@ -89,6 +88,7 @@ function checkGame(checker){
 
 };
 function newGame(){
+    
     let gameOn = false;
     let level = 0;
     let cpuPattern = [];
