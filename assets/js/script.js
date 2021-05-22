@@ -12,8 +12,7 @@ $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!");
         $("h2").text("");
-        $();
-   
+    
       gameOn = true;
       newSequence();
       checkGame();
@@ -29,7 +28,7 @@ playerPattern.push(playerKey); // pushing the value from the playerKey in to the
 sound(playerKey); // calling the sound function when the key is clicked
 keyDown(playerKey); // changing button styling when the key is clicked
 
-checkGame(playerPattern - 1);
+checkGame(playerPattern.length- 1);
 });
 
 // function for the game to create a random sequence 
@@ -74,14 +73,17 @@ function keyDown(keyStyle) {
 
 // preliminary checkGame function
 function checkGame(){
-    if(playerPattern.length === cpuPattern.length) {
-        $("h3").text("good job!");
+    if(playerPattern.length === cpuPattern.length){
+        $("h3").text("Good job!");
         $("h1").css("color", "green");
     
         setTimeout(function(){
             newSequence();
-        },1000) 
+            $("h3").text("");
+        },1000);
+     
     } else {
+         $("h1").css("color", "red");
         newGame();
     };
 
@@ -92,4 +94,6 @@ function newGame(){
     let cpuPattern = [];
     let playerPattern = [];
 };
-// note, script isn't rendering in github.
+// note, script isn't rendering in github. 
+// note, script isn't rendering in github. 
+
