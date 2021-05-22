@@ -70,7 +70,11 @@ function checkGame(){
     if(playerPattern.length === cpuPattern.length) {
         $("h3").text("good job!");
         $("h1").css("color", "green");
-        newSequence();
+        
+        setTimeout(function(){
+            newSequence();
+        },1000)
+        
     } else {
         console.log("wrong! your final score is:" + level);
         let gameOn = false;
@@ -87,3 +91,5 @@ function checkGame(){
     }
 
 }
+
+// note, script isn't rendering in github.
