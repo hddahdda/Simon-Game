@@ -12,8 +12,8 @@ $("#button").click(function() {
     if(!gameOn) {
         $("h3").text("Game Started!");
         $("h2").text("");
-       
-
+        $();
+   
       gameOn = true;
       newSequence();
       checkGame();
@@ -40,6 +40,7 @@ level++;
   var randomNumber = Math.floor(Math.random() * 4);
   var randomKey = keys[randomNumber];
   cpuPattern.push(randomKey);
+
 
  keyDown(randomKey);
  sound(randomKey);
@@ -81,20 +82,14 @@ function checkGame(){
             newSequence();
         },1000) 
     } else {
-        console.log("wrong! your final score is:" + level);
-        let gameOn = false;
-        
-        $("#button").text("Try again?"); {
-            console.log("restart game");
-        } 
-        let level = 0;
-        let cpuPattern = [];
-        let playerPattern = [];
+        newGame();
+    };
 
-        newSequence();
-        checkGame();
-    }
-
-}
-
+};
+function newGame(){
+    let gameOn = false;
+    let level = 0;
+    let cpuPattern = [];
+    let playerPattern = [];
+};
 // note, script isn't rendering in github.
