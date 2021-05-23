@@ -74,7 +74,7 @@ function keyDown(keyStyle) {
 // Checking game sequence against user sequence 
 function checkGame(checker){
     if(playerPattern[checker] === cpuPattern[checker]){
-        $("h3").text("Level " + level);
+        $("h2").text("Level " + level);
         $("h1").addClass("good");
     if (cpuPattern.length === playerPattern.length) {
         setTimeout(function(){
@@ -82,7 +82,7 @@ function checkGame(checker){
         },1000);
      }
     } else {
-        $("h3").text("Game Over, Final level: " + level);
+        $("h2").text("Game Over, Final level: " + level);
         $("#button").text("Restart");
         $(".btndiv").removeClass("invisible");
         newGame();
