@@ -58,7 +58,7 @@ To be able to see current progress  |  The current level is indicated in the h2 
 ## Structure
 The website consists of one page which is the frontpage. The goal during the process of creating the game was to try to keep it simple and easily maintainable. This regarding both the code as well as how the website is viewed. 
 
-**Wireframese**
+**Wireframes**
 ![Wireframes](readmefiles/wireframes/memory.png)
 
 ### Design
@@ -78,6 +78,12 @@ By the use of a [Color wheel](https://www.canva.com/colors/color-wheel/) I chose
 **Existing Features**
 * Start Game - When button "start game" is pressed, the game starts 
 ![Gif showing how the game starts when the button is pressed](readmefiles/screenshots/startgame.gif)
+
+* Level indicator - h2 is updated to render which level the player is currently on. 
+![Gif showing how the levels are being rendered](readmefiles/screenshots/levels.gif)
+
+* Game Over + Restart - When game is over, the player can choose to restart the game.
+![Gif showing how the game ends and restarts](readmefiles/screenshots/restart.gif)
 
 **Features left to implement**
 * Adding another level which makes the game play faster, this could be done by setting shorter time intervals in JavaScript. 
@@ -152,26 +158,26 @@ JavaScript:
 To reset the game I used location.reload(); which is a JavaScript function that resets the page, as you would if you were to refresh it.
 
     location.reload();
-    
+
+### Font Awesome Bug   
+![Screenshot of bug that occurs implementing Font Awesome icons](readmefiles/screenshots/buggif.gif)
+As seen above, the buttons doesn't work properly when using Font Awesome. Therefore I decied to completely skip this feature. 
+
 ### Testing Responsiveness 
 I used [Am I Responsive](http://ami.responsivedesign.is/) to see that my website rendered as intended across devices. 
 
-// Insert Image //
+![Screenshot from AmIResponsive website](readmefiles/screenshots/amiresponsive.png)
 
 I also user Google Developer Tools to test responsiveness as well as keybreaks.
 
-// Insert Image //
+![Gif showing website using google developer tools](readmefiles/screenshots/responsivegif.gif)
 
 ### Lighthouse 
 The website was tested in in [Lighthouse](https://developers.google.com/web/tools/lighthouse) using Google Developer Tools. By doing this Lighthouse creates scores for performance, accessibility, best practices, and SEO. 
 
-// Images here 
-
-
-### Testing Gameplay
-I tested the game 
-
- 
+![Image of Lighthouse results](readmefiles/screenshots/lighthouse1.png)
+![Image of Lighthouse results](readmefiles/screenshots/lighthouse2.png)
+The website scored well in all categories. 
 
 ## Deployment
 This website is hosted via GitHub pages and was created using GitPod which is a free code editor online. 
