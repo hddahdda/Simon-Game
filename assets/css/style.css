@@ -51,13 +51,6 @@ h1 {
     align-items: center;
 }
 
-#key1 i,
-#key2 i,
-#key3 i,
-#key4 i {
-   font-size: 4rem;
-}
-
 button {
     width: 15rem;
     height: 4rem;
