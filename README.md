@@ -234,6 +234,18 @@ $("h2").text("Text of choosing here " + level);
 * As well as this part:
    $("h2").text("Text of choosing here" + level);
 
+### How to use the git command line in GitPod
+** To see which files and folders are added, commited, modified or pushed **
+* Type: git status
+** To add a file/folder to be commited **
+* Type: git add folder/filename for example: git add assets/cs/style.css
+* To add all type: git add --all
+** To commit changes to Git ** 
+* Type: git commit -m "added this and this" 
+** To push files to GitHub **
+* Type: git push 
+
+Your files are now being pushed to GitHub. 
 
 ## Credits
 
