@@ -3,6 +3,36 @@
 
 [Live Website](https://hddahdda.github.io/Simon-Game/)
 
+- [Simon Key Game](#simon-key-game)
+  * [About](#about)
+- [UX](#ux)
+  * [Strategy](#strategy)
+  * [Scope](#scope)
+  * [Structure](#structure)
+    + [Design](#design)
+  * [Features](#features)
+  * [Technologies Used](#technologies-used)
+  * [Testing](#testing)
+    + [Code validation](#code-validation)
+    + [Manual Testing](#manual-testing)
+      - [First Testing](#first-testing)
+      - [Final testing](#final-testing)
+      - [Button invisible:](#button-invisible-)
+      - [Reseting the game](#reseting-the-game)
+    + [Font Awesome Bug](#font-awesome-bug)
+    + [Testing Responsiveness](#testing-responsiveness)
+    + [Lighthouse](#lighthouse)
+  * [Deployment](#deployment)
+    + [How to create a new repository in GitHub](#how-to-create-a-new-repository-in-github)
+    + [How to deploy a website:](#how-to-deploy-a-website-)
+  * [How to clone this repository](#how-to-clone-this-repository)
+    + [How to personalize the code:](#how-to-personalize-the-code-)
+    + [How to use the git command line in GitPod](#how-to-use-the-git-command-line-in-gitpod)
+  * [Credits](#credits)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## About
 This is a memory game, inspired by the classic "Simon Game". It might be viewed as a rebranding of the game, intended to be a more "calm" version of the earlier game. It is created using several different technologies. 
 
@@ -103,6 +133,7 @@ By the use of a [Color wheel](https://www.canva.com/colors/color-wheel/) I chose
 * GarageBand 
 * [Ezgif](https://ezgif.com/video-to-gif) - to convert screen recordings to gifs
 * https://www.favicon.cc/ - to create a favicon
+* https://ecotrust-canada.github.io/markdown-toc/ - toc generator
 
 ## Testing
 ### Code validation
