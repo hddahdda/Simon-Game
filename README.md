@@ -1,4 +1,4 @@
-# Memory Key Game
+# Simon Key Game
 ![Screenshot from AmIResponsive website](readmefiles/screenshots/amiresponsive.png)
 
 [Live Website](https://hddahdda.github.io/Simon-Game/)
@@ -58,7 +58,8 @@ To be able to see current progress  |  The current level is indicated in the h2 
 ## Structure
 The website consists of one page which is the frontpage. The goal during the process of creating the game was to try to keep it simple and easily maintainable. This regarding both the code as well as how the website is viewed. 
 
-**Wireframes here**
+**Wireframese**
+![Wireframes](readmefiles/wireframes/memory.png)
 
 ### Design
 
@@ -75,7 +76,8 @@ By the use of a [Color wheel](https://www.canva.com/colors/color-wheel/) I chose
 
 ## Features 
 **Existing Features**
-
+* Start Game - When button "start game" is pressed, the game starts 
+![Gif showing how the game starts when the button is pressed](readmefiles/screenshots/startgame.gif)
 
 **Features left to implement**
 * Adding another level which makes the game play faster, this could be done by setting shorter time intervals in JavaScript. 
@@ -96,13 +98,17 @@ By the use of a [Color wheel](https://www.canva.com/colors/color-wheel/) I chose
 ## Testing
 ### Code validation
 * For HTML validation I used [W3C HTML Validator](https://validator.w3.org).
-/ image here
+![Screenshot of validated HTML](readmefiles/screenshots/htmlvalid.png)
 * For CSS validation I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-* / image here 
-* For JavaScript validation I used the [JSHint](https://jshint.com/) which gave me the following warnings: // picture here // 
+![Screenshot of validated CSS](readmefiles/screenshots/cssvalid.png)
+* For JavaScript validation I used the [JSHint](https://jshint.com/) which gave me the following warnings: 
+![Screenshot of non valid JavaScript](readmefiles/screenshots/jsnonvalid.png)
 However, after browsing Code Institues Slack community, this could be solved by pasting the following code in the head of the JavaScript file. 
 * `/* jshint esversion: 6 */`  
 `/* globals $:false */`
+
+Which resulted in:
+![Screenshot of valid JavaScript](readmefiles/screenshots/jsvalid.png)
 
 ### Manual Testing 
 
