@@ -180,16 +180,32 @@ The website was tested in in [Lighthouse](https://developers.google.com/web/tool
 The website scored well in all categories. 
 
 ## Deployment
-This website is hosted via GitHub pages and was created using GitPod which is a free code editor online. 
+[This website](https://hddahdda.github.io/Simon-Game/) is hosted via GitHub pages and was created using GitPod which is a free code editor online. 
 
-### How to create a new project in GitHub
+
+### How to create a new repository in GitHub
 * If you don't have a GitHub account, create one on [github.com](https://github.com/) 
-* 
+* Click on the button in the right corner, then click on "Your Repositories"
+![Screenshot of GitHub website with arrows pointing at where to click ](readmefiles/screenshots/gotorepo.png)
+* Click on button that says "New"
+![Screenshot of GitHub website with arrows pointing at where to click ](readmefiles/screenshots/newrepo.png)
+* Give your repository a name 
+![Screenshot of GitHub website with arrows pointing at where to click ](readmefiles/screenshots/namingrepo.png)
+* Create repository
+![Screenshot of GitHub website with arrows pointing at where to click ](readmefiles/screenshots/createrepo.png)
+
+You have now successfully created a GitHub repository!
 
 ### How to deploy a website: 
-* Lo
-* 
+* Go to your GitHub Repository, click on "Settings".
+![Screenshot of GitHub website, settings](readmefiles/screenshots/settings.png)
+* Scroll down to "GitHub Pages", click at "Check it out here!"
+![Screenshot of GitHub website, GitHub pages](readmefiles/screenshots/githubpages.png)
+* Choose the "Master Branch", "Root", and Click "Save"
+![Screenshot of GitHub website, GitHub pages, deploying website](readmefiles/screenshots/hostwebsite.png)
 
+* Your website is now being created and will be aviliable in a moment. 
+![Screenshot of GitHub website, GitHub pages, deployed website](readmefiles/screenshots/websitedeployed.png)
 ### How to personalize the code: 
 
 
