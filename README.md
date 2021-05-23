@@ -102,6 +102,7 @@ By the use of a [Color wheel](https://www.canva.com/colors/color-wheel/) I chose
 * GitHub
 * GarageBand 
 * [Ezgif](https://ezgif.com/video-to-gif) - to convert screen recordings to gifs
+* https://www.favicon.cc/ - to create a favicon
 
 ## Testing
 ### Code validation
@@ -139,7 +140,7 @@ H1 turning green |    That the H1 turns green when the game is started.      | H
 | Test Description| How it was solved |New  Result   |
 | :---        |    :----:   |          ---: |
 |H1 too thin     | Increased font weight to 900      | H1 heavier  |
- |   Audio sounds bad      | --| Not fixed yet
+ |   Audio sounds bad      | Cut the files length using mp3cut.net| If several keys are pressed at once that noise still appears, however, improved by cutting file length as this made it less likely to appear.
 |  Start button did not disappear     | By adding a class in css called .invisible which made the button transparent.   |Button is still there, but not able to be clicked or viewed. Therefore achieving the intended results.   |
 | Start button did not reappear    | By removing class .invisible once the game is over      | Does work    |
 |   Restart button not working    | As the game was started using jQuery click event this was a little bit more tricky. As resetting the values of the strings did not seem to "fix" this I decied to use a JavaScript function that refreshes the whole page, thereby clearing the cache and stored values in JavaScript.       | The Restart button works, but instead of restarting the game directly the user is taken back to the homepage. From which it is possible to restart the game.  |
