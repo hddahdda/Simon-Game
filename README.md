@@ -49,12 +49,14 @@ As this is a game created for children I decided to create two different lists, 
 * For the code to be easily understood, structured and accurate with comments
 
 **Addressing user needs and expectancies**
-| What the user may want| How? | 
-| :---        |    :----:   |          ---: |
-| For their achievements in the game to be acknowledged by the game    | By having the current level displayed in the header.      |
-To be able to see current progress  |  The current level is indicated in the h2 as soon as the game is started.    |
-|  For the website design to be fun to look at.      |  By using colours that are tetradic, a header font that is fun to look at.       
-| For the language to be easily understood.   |  The language is written so that a native english speaking child could understand it.     | 
+|What the user may want  |How?  |
+|--|--|
+| For their achievements in the game to be acknowledged by the game |   By having the current level displayed in the header.|
+| To be able to see current progress | The current level is indicated in the h2 as soon as the game is started. |
+| For the website design to be fun to look at.  | By using colours that are tetradic, a header font that is playful. |
+| For the language to be easily understood. | The language is written so that a native english speaking child could understand it. |
+
+
 ## Structure
 The website consists of one page which is the frontpage. The goal during the process of creating the game was to try to keep it simple and easily maintainable. This regarding both the code as well as how the website is viewed. 
 
@@ -235,14 +237,14 @@ $("h2").text("Text of choosing here " + level);
    $("h2").text("Text of choosing here" + level);
 
 ### How to use the git command line in GitPod
-** To see which files and folders are added, commited, modified or pushed **
+**To see which files and folders are added, commited, modified or pushed**
 * Type: git status
-** To add a file/folder to be commited **
+**To add a file/folder to be commited**
 * Type: git add folder/filename for example: git add assets/cs/style.css
 * To add all type: git add --all
-** To commit changes to Git ** 
+**To commit changes to Git** 
 * Type: git commit -m "added this and this" 
-** To push files to GitHub **
+**To push files to GitHub**
 * Type: git push 
 
 Your files are now being pushed to GitHub. 
