@@ -1,5 +1,5 @@
 # Memory Key Game
-Images here
+![Screenshot from AmIResponsive website](readmefiles/screenshots/amiresponsive.png)
 
 [Live Website](https://hddahdda.github.io/Simon-Game/)
 
