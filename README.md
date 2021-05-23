@@ -206,8 +206,33 @@ You have now successfully created a GitHub repository!
 
 * Your website is now being created and will be aviliable in a moment. 
 ![Screenshot of GitHub website, GitHub pages, deployed website](readmefiles/screenshots/websitedeployed.png)
-### How to personalize the code: 
 
+## How to clone this repository
+* Click the "Code" button.
+![Screenshot of GitHub website, Code button](readmefiles/screenshots/code.png)
+* At this stage you can choose between different alternatives, one is to download the files to your desktop, unzip them and then use in code editor by choice. 
+* You could also copy this link: " https://github.com/hddahdda/Simon-Game.git " 
+* Starting your code editor, then pasting git clone https://github.com/hddahdda/Simon-Game.git in to your terminal.
+* You have now successfully cloned the files of the website!
+
+
+### How to personalize the code: 
+**To personalize this code to better fit specifik user needs you could do the following.**
+* To do this you need to have access to de files, if you don't, make sure to clone them before starting.
+
+**Changing colors** 
+* Inside the folder assets/css, go to style.css.
+* At the top of the file are the "root colors", to change them, simply change the color value of choice. This way you could easily change background color, font color as well as key colors.
+![Screenshot of style.css file](readmefiles/screenshots/rootcolor.png)
+
+**Changing messages displayed in H2** 
+* Inside the folder assets/js, go to script.js.
+* Scroll down to "checkGame" function. 
+![Screenshot of script.js file](readmefiles/screenshots/jsname.png)
+* To personalize the messages displayed you could change this part of the code: 
+$("h2").text("Text of choosing here " + level); 
+* As well as this part:
+   $("h2").text("Text of choosing here" + level);
 
 
 ## Credits
