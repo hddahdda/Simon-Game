@@ -35,13 +35,15 @@ $(".btn").on("click", function(event) {
     checkGame(playerPattern.length - 1);
 });
 
-// function for the game to create a random sequence 
+/*
+Code below is the function that will be called to initialize a new level. 
+*/
 function newSequence() {
     playerPattern = [];
 
-    level++;
+    level++; 
     var randomNumber = Math.floor(Math.random() * 4); // The game part
-    var randomKey = keys[randomNumber];
+    var randomKey = keys[randomNumber]; // is 
     cpuPattern.push(randomKey);
 
 
@@ -53,11 +55,11 @@ function newSequence() {
 
 function sound(keyAudio) {
     var audio = new Audio("assets/sounds/" + keyAudio + ".m4a");
-    setTimeout(function() {
-        audio.play();
+    setTimeout(function() { // sets the maximum ml to 1000 for audio.play
+        audio.play(); 
     }, 100);
 
-    // temporarily shortened files using timeout. 
+    
 }
 
 // when the key is triggered (either by computer or human), this function creates inline styling using jQuery.
@@ -72,15 +74,15 @@ function keyDown(keyStyle) {
 
 // Checking game sequence against user sequence 
 function checkGame(checker) {
-    if (playerPattern[checker] === cpuPattern[checker]) {
+    if (playerPattern[checker] === cpuPattern[checker]) { // checks if the values are the same
         $("h2").text("Level " + level);
         $("h1").addClass("good");
-        if (cpuPattern.length === playerPattern.length) {
+        if (cpuPattern.length === playerPattern.length) { // if this is true run newSequence function
             setTimeout(function() {
                 newSequence();
             }, 1000);
         }
-    } else {
+    } else { // if not execute this code
         $("h2").text("Game Over, Final level: " + level);
         $("#button").text("Restart");
         $(".btndiv").removeClass("invisible");
