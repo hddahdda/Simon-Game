@@ -1,132 +1,146 @@
 /************************* Colors*/
+
 :root {
-  --key1: #754BB4;
-  --key2: #B44B55;
-  --key3: #8AB44B;
-  --key4: #4BB4AA; 
-  --background: #F0F8F5; 
-  --white: #eef2f3; 
-  --black: #212c2f; 
+	--key1: #754BB4;
+	--key2: #B44B55;
+	--key3: #8AB44B;
+	--key4: #4BB4AA;
+	--background: #F0F8F5;
+	--white: #eef2f3;
+	--black: #212c2f;
 }
+
+
 /************************* Body*/
+
 body {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    color: var(--black);
-    background-color: var(--background);
-    padding: 0;
-    margin: 0;
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
+	color: var(--black);
+	background-color: var(--background);
+	padding: 0;
+	margin: 0;
 }
+
 
 /************************* Header*/
 
 h1 {
-    font-family: 'Codystar', cursive;
-    padding: 2rem;
-    margin-top: 0.5rem;
-    font-size: 4.5rem;
-    font-weight: 900;
+	font-family: 'Codystar', cursive;
+	padding: 2rem;
+	margin-top: 0.5rem;
+	font-size: 4.5rem;
+	font-weight: 900;
 }
+
 
 /************************* General rules in Game Area*/
 
 .container {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 #key1,
 #key2,
 #key3,
 #key4 {
-  
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
-    padding: 1.5rem;
-    margin: 1rem;
-    border: double;
-    border-width: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	padding: 1.5rem;
+	margin: 1rem;
+	border: double;
+	border-width: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button {
-    width: 15rem;
-    height: 4rem;
-    font-size: xx-large;
-    border-radius: 20%;
+	width: 15rem;
+	height: 4rem;
+	font-size: xx-large;
+	border-radius: 20%;
 }
+
 
 /************************* Specifik rules for button + keys*/
 
-button .btndiv{
-    font-weight: 800;
-    font-style: var(--white);
-    border-radius: 20%;
+button .btndiv {
+	font-weight: 800;
+	font-style: var(--white);
+	border-radius: 20%;
 }
+
 #key1 {
-    background-color: var(--key1);
+	background-color: var(--key1);
 }
+
 #key2 {
-    background-color: var(--key2);
+	background-color: var(--key2);
 }
+
 #key3 {
-    background-color: var(--key3);
+	background-color: var(--key3);
 }
+
 #key4 {
-    background-color: var(--key4);
+	background-color: var(--key4);
 }
+
 
 /******************** Hover ***/
 
 #key1:hover {
-    background-color: var(--key1);
+	background-color: var(--key1);
 }
+
 #key2:hover {
-    background-color: var(--key2);
+	background-color: var(--key2);
 }
+
 #key3:hover {
-    background-color: var(--key3);
+	background-color: var(--key3);
 }
+
 #key4:hover {
-    background-color: var(--key4);
+	background-color: var(--key4);
 }
+
 
 /**********************Rules that are applied through JavaScript***/
 
 .invisible {
-  color: rgba(0,0,0,0);
-  background-color: rgba(0,0,0,0);
+	color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .good {
-color: var(--key4);
+	color: var(--key4);
 }
+
 
 /**********************Media Queries***/
 
-
 @media (max-width: 480px) {
-    h1 {
-       padding: 0.8rem;
-       margin-top: 0.2rem;
-      font-size: 2rem;
-    }
-    #key1,
-#key2,
-#key3,
-#key4 {
-    width: 5em;
-    height: 5em;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-width: 2px;
-}
-
-button {
-    width: 6rem;
-    height: 3rem;
-    font-size: 0.8rem;
-}
+	h1 {
+		padding: 0.8rem;
+		margin-top: 0.2rem;
+		font-size: 2rem;
+	}
+	#key1,
+	#key2,
+	#key3,
+	#key4 {
+		width: 5em;
+		height: 5em;
+		padding: 0.5rem;
+		margin: 0.5rem;
+		border-width: 2px;
+	}
+	button {
+		width: 6rem;
+		height: 3rem;
+		font-size: 0.8rem;
+	}
 }
